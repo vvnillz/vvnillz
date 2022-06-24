@@ -18,8 +18,8 @@ platform = detectDeviceType();
 
 if(platform == "Desktop")
 {
-    backButton.style = "margin-left: auto;margin-right: auto;max-height: 10%;max-width: 10%; ";
-    mainEmoteDiv.style = "margin-top: 260px";
+    backButton.style = "margin-left: auto;margin-right: auto;max-height: 10%;max-width: 10%;";
+    mainEmoteDiv.style = "margin-top: 50px"
 }
 else 
 {
