@@ -14,15 +14,21 @@ const detectDeviceType = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobi
     : 'Desktop';
 platform = detectDeviceType();
 
+
+
+
 if(platform == "Desktop")
 {
-    background.style = "margin-top: 120px;margin-left: auto;margin-right: auto; display: block; opacity: 100%; max-width: 70%; max-height: fit-content;background-color: transparent;";
-    instaIcon.style = "margin-left: auto;margin-right: auto;max-height: 4%;max-width: 4%; ";
-    ytIcon.style = "margin-left: auto;margin-right: auto;max-height: 4%;max-width: 4%; ";
-    spotifyIcon.style = "margin-left: auto;margin-right: auto;max-height: 4%;max-width: 4%; ";
-    emotes.style = "margin-top: 7%;margin-left: auto;margin-right: auto;max-height: 3.5%;max-width: 3.5%; ";
+    background.style = "margin-top: 260px;margin-left: auto;margin-right: auto; display: block; opacity: 100%; max-width: 40%; max-height: fit-content;background-color: transparent;";
+    instaIcon.style = "margin-left: auto;margin-right: 4px; max-height: 4%;max-width: 4%; ";
+    ytIcon.style = "margin-left: 4px;margin-right: 4px; max-height: 4%;max-width: 4%; ";
+    spotifyIcon.style = "margin-left: 4px;margin-right: 4px;max-height: 4%;max-width: 4%; ";
+    emotes.style = "margin-top: 2%;margin-left: 4px;margin-right: 4px;max-height: 3.5%;max-width: 3.5%; ";
 }
-else
+else 
+
+//thank you sanicbtw 
+
 {
     mainDiv.style = "position: absolute; bottom: 51rem; text-align:center;";
     background.style = "margin-left: auto;margin-right: auto; display: block; max-width: 90%; background-color: transparent;";
