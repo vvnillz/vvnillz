@@ -14,9 +14,6 @@ const detectDeviceType = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobi
     : 'Desktop';
 platform = detectDeviceType();
 
-
-
-
 if(platform == "Desktop")
 {
     background.style = "margin-top: 260px;margin-left: auto;margin-right: auto; display: block; opacity: 100%; max-width: 40%; max-height: fit-content;background-color: transparent;";
@@ -26,18 +23,13 @@ if(platform == "Desktop")
     emotes.style = "margin-top: 2%;margin-left: 4px;margin-right: 4px;max-height: 3.5%;max-width: 3.5%; ";
 }
 else 
-
-//thank you sanicbtw 
-
 {
+    //thank you sanicbtw 
+
     mainDiv.style = "position: absolute; bottom: 51rem; text-align:center;";
     background.style = "margin-left: auto;margin-right: auto; display: block; max-width: 90%; background-color: transparent;";
     backDiv.style = "position: relative; display: block; text-align: -webkit-center";
     icons.style.position = "relative";
-
-    /*
-    backDiv.style.top = (screen.height - 100) + "px";
-    icons.style.bottom = -(screen.height) + "px";*/
 
     instaIcon.style = "margin-right: 1rem; max-width: 12%; ";
     ytIcon.style = "margin-right: 1rem; max-width: 12%; ";

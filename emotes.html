@@ -2,9 +2,7 @@
   <head>
     <title>vvnillz</title>
     <meta charset="UTF-8">
-
-</head>
-
+  </head>
 
   <link rel="icon" href="favicon.png">
 
@@ -13,102 +11,86 @@
       background-image: url('nillybg.png');
     }
 
+    @keyframes example {
+      from {max-width: 60%;opacity: 0%}
+      to {max-width: 70%; opacity: 100%}
 
-@keyframes example {
-  from {max-width: 60%;opacity: 0%}
-  to {max-width: 70%; opacity: 100%}
-  
-}
-@keyframes example1 {
-  from {max-width: 5%;opacity: 0%}
-  to {max-width: 10%; opacity: 100%}
-  
-}
-@keyframes example2 {
-  from {max-width: 2%;opacity: 0%}
-  to {max-width: 3.5%; opacity: 100%}
-  
-}
+    }
+    @keyframes example1 {
+      from {max-width: 5%;opacity: 0%}
+      to {max-width: 10%; opacity: 100%}
 
-.main4 {
+    }
+    @keyframes example2 {
+      from {max-width: 2%;opacity: 0%}
+      to {max-width: 3.5%; opacity: 100%}
 
+    }
 
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-
-  animation-name: example1;
-  animation-duration: 4s;
-  animation-delay: 0s;
-
-margin-left: auto;
-margin-right: auto;
-margin-top: 4%;
-
-  transition: transform 250ms;
-
-
-  /* HOVER OFF */
-}
-
-.main4:hover {
-  transform: scale(1.04);
-
-}
-
-
-.main5 {
-
-
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--o-user-select: none;
-user-select: none;
-
-animation-name: example1;
-animation-duration: 4s;
-animation-delay: 0s;
-
-margin-left: auto;
-margin-right: auto;
-margin-top: 4%;
-
-transition: transform 250ms;
-
-
-/* HOVER OFF */
-}
-
-.main5:hover {
-transform: scale(1.04);
-
-}
-
-
-    </style>
+    .main4 {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
     
+      animation-name: example1;
+      animation-duration: 4s;
+      animation-delay: 0s;
+    
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+    
+      transition: transform 250ms;
+    
+      /* HOVER OFF */
+    }
+
+    .main4:hover {
+      transform: scale(1.04);
+    
+    }
+
+    .main5 {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      
+      animation-name: example1;
+      animation-duration: 4s;
+      animation-delay: 0s;
+      
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+      
+      transition: transform 250ms;
+      
+      /* HOVER OFF */
+    }
+
+    .main5:hover {
+      transform: scale(1.04);
+    }
+  </style>
 <body>
-<div align=center>
-<img class="main4" src="vvnillz_emote_-w-.webp"/>
-<img class="main4" src="vvnillz_emote_blush.webp"/>
-<img class="main4" src="vvnillz_emote_shyblush.webp"/>
-<img class="main4" src="vvnillz_emote_shylove.webp"/>
-<img class="main4" src="vvnillz_emote_loveplead.webp"/>
-<img class="main4" src="vvnillz_emote_cry.webp"/>
-<br>
-<a style="color: transparent"  href="./index.html">
+  <div align=center id="mainEmoteDiv">
+    <img class="main4" id="emoteW" src="emotes/vvnillz_emote_-w-.webp"/>
+    <img class="main4" id="emoteBlush" src="emotes/vvnillz_emote_blush.webp"/>
+    <img class="main4" id="emoteShyBlush" src="emotes/vvnillz_emote_shyblush.webp"/>
+    <img class="main4" id="emoteShyLove" src="emotes/vvnillz_emote_shylove.webp"/>
+    <img class="main4" id="emoteLovePlead" src="emotes/vvnillz_emote_loveplead.webp"/>
+    <img class="main4" id="emoteCry" src="emotes/vvnillz_emote_cry.webp"/>
 
-    <img style="
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 10%;
-    max-width: 10%; 
-    "
-    class="main5" src="back.png"/>
+    <br>
+
+    <a id="backA" style="color: transparent" href="https://bonndevoff.github.io/vvnillz/">
+      <img class="main5" id="backButton" src="back.png"/>
     </a>
-</div>
+  </div>
+</body> 
 
-    </body> 
+<script src="./emoteHandler.js"></script>
