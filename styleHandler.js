@@ -5,6 +5,7 @@ var ytIcon = document.getElementById("ytIcon");
 var spotifyIcon = document.getElementById("spotifyIcon");
 var emotes = document.getElementById("emotes");
 var icons = document.getElementById("icons");
+var mainDiv = document.getElementById("mainDiv");
 
 var platform = "";
 //from https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-72.php
@@ -23,15 +24,19 @@ if(platform == "Desktop")
 }
 else
 {
+    mainDiv.style = "position: absolute; bottom: 51rem; text-align:center;";
     background.style = "margin-left: auto;margin-right: auto; display: block; max-width: 90%; background-color: transparent;";
-    backDiv.style = "position: absolute; display: block; text-align: -webkit-center";
+    backDiv.style = "position: relative; display: block; text-align: -webkit-center";
+    icons.style.position = "relative";
+
+    /*
     backDiv.style.top = (screen.height - 100) + "px";
-    icons.style = "position: absolute; margin-right: auto; margin-left: 8rem;";
-    icons.style.top = (screen.height + 200) + "px";
-    instaIcon.style = "margin-right: 1rem; max-width: 15%; ";
-    ytIcon.style = "margin-right: 1rem; max-width: 15%; ";
-    spotifyIcon.style = "margin-right: 1rem; max-width: 15%; ";
-    emotes.style = "margin-right: 1rem; max-width: 15%; ";
+    icons.style.bottom = -(screen.height) + "px";*/
+
+    instaIcon.style = "margin-right: 1rem; max-width: 12%; ";
+    ytIcon.style = "margin-right: 1rem; max-width: 12%; ";
+    spotifyIcon.style = "margin-right: 1rem; max-width: 12%; ";
+    emotes.style = "margin-right: 1rem; max-width: 12%; ";
 
     background.className = "";
     instaIcon.className = "";
